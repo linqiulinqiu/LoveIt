@@ -509,3 +509,12 @@ rss:
   Newtab: true
   Icon:
     Class: fas fa-rss fa-fw
+
+#100: Discord
+discord:
+  Weight: 100
+  Prefix: https://discord.gg/
+  Title: Discord
+  Icon:
+    Class: fab fa-discord fa-fw
+

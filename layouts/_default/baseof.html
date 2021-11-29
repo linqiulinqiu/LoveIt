@@ -25,7 +25,14 @@
         {{- /* Body wrapper */ -}}
         <div class="wrapper">
             {{- partial "header.html" . -}}
-            <main class="main">
+
+            {{ if (isset .Site.Params "homebackground") }}
+                {{ with .Site.Params.homeBackground }}
+                <main class="main" style="background-image:url({{ . | relURL }}); background-repeat:no-repeat; background-size:cover;">
+                {{ end }}
+            {{ else }}
+                <main class="main">
+            {{ end }}
                 <div class="container">
                     {{- block "content" . }}{{ end -}}
                 </div>
