@@ -7,6 +7,10 @@
 
   main {
     flex: 1 0 auto;
+    background: url('/images/bg22.gif') ;
+    [theme=dark] & {
+        background: url('/images/bg00.gif');
+    }
 
     .container {
       padding: 0 1rem;
